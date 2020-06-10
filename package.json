@@ -1,6 +1,6 @@
 {
   "name": "shared-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/pablo-albaladejo/shared-components/issues"
   },
-  "homepage": "https://github.com/pablo-albaladejo/shared-components#readme"
+  "homepage": "https://github.com/pablo-albaladejo/shared-components#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {}
 }
