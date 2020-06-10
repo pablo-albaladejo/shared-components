@@ -4,15 +4,11 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    [
-      "css-modules-transform",
-      {
-        "extractCss": {
-          "dir": "./lib",
-          "relativeRoot": "./src/",
-          "filename": "[path]/[name].css"
-        }
-      }
-    ]
+    ["postcss-css-modules", {
+      "config": "configuration/postcss.config.js",
+      "keep": true,
+      "from": "./src",
+      "to": "./lib"
+    }]
   ]
 }
