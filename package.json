@@ -4,6 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "release:patch": "git tag -l | xargs git tag -d && changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
+    "build": "./node_modules/.bin/babel ./src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +19,13 @@
   },
   "homepage": "https://github.com/pablo-albaladejo/shared-components#readme",
   "dependencies": {
+    "generate-changelog": "^1.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-react": "^7.10.1"
+  }
 }
