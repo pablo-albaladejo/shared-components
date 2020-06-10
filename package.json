@@ -19,13 +19,13 @@
   },
   "homepage": "https://github.com/pablo-albaladejo/shared-components#readme",
   "dependencies": {
-    "generate-changelog": "^1.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
-    "@babel/preset-react": "^7.10.1"
+    "@babel/preset-react": "^7.10.1",
+    "generate-changelog": "^1.8.0"
   }
 }
