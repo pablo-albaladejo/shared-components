@@ -2,7 +2,7 @@
   "name": "shared-components",
   "version": "1.0.6",
   "description": "",
-  "main": "dist/main.js",
+  "main": "lib/index.js",
   "scripts": {
     "release:patch": "git tag -l | xargs git tag -d && changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "build": "webpack --mode production",
