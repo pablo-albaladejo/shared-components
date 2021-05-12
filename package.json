@@ -31,7 +31,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-postcss-css-modules": "^1.2.0",
     "generate-changelog": "^1.8.0",
-    "postcss": "^7.0.32",
+    "postcss": "^8.2.10",
     "postcss-modules": "^2.0.0"
   }
 }
